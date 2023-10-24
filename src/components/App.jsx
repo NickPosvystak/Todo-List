@@ -1,16 +1,14 @@
-import { Provider } from "react-redux";
-import { AppBar } from "./AppBar/AppBar";
-import { Layout } from "./Layout/Layout";
+import { Layout } from './Layout/Layout';
+import { AppBar } from './AppBar/AppBar';
+import { TaskForm } from './TaskForm/TaskForm';
+import { TaskList } from './TaskList/TaskList';
 
 export const App = () => {
   return (
-    <Provider>
-        <Layout>
+    <Layout>
       <AppBar />
-      {/* <TaskForm />
-      <TaskList /> */}
+      <TaskForm />
+      <TaskList />
     </Layout>
-    </Provider>
-  
   );
 };
